@@ -62,10 +62,12 @@ const LoginCard = () => {
                         <p className={classNames('text-red-500 text-sm px-4', !invalidInput?.password?.length ? 'invisible' : 'visible')}>{invalidInput.password}</p>
                     </div>
                     <div className='flex justify-end -mt-5'>
+                        {/* eslint-disable-next-line */}
                         <a href='#' className='text-[#667085]/50'>Forgot Password?</a>
                     </div>
                     <button disabled={disableLogin} className={classNames('text-white shadow-buttonShadow rounded-[10px] block p-4 w-full mt-10', disableLogin ? "bg-black/50 cursor-not-allowed" : "bg-black cursor-pointer active:scale-95 active:duration-500")} onClick={disableLogin ? () => { } : validator}>Log In</button>
                 </form>
+                {/* eslint-disable-next-line */}
                 <p className='text-center text-[#667085] mt-16'>Don’t an account yet? <a href="#" className='text-[#08A593]'>Sign Up</a> </p>
             </div>
         </div>
